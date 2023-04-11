@@ -56,6 +56,132 @@ gem update rails
 ## Folder structure
 
 ```sh
+├── app
+|  ├── assets
+|  |  ├── builds
+|  |  ├── config
+|  |  |  └── manifest.js
+|  |  ├── images
+|  |  └── stylesheets
+|  |     ├── application.css
+|  |     ├── components
+|  |     ├── config
+|  |     ├── layouts
+|  |     └── mixins
+|  ├── controllers
+|  |  ├── application_controller.rb
+|  |  ├── concerns
+|  |  └── tasks_controller.rb
+|  ├── helpers
+|  |  ├── application_helper.rb
+|  |  └── tasks_helper.rb
+|  ├── javascript
+|  |  ├── application.js
+|  |  └── controllers
+|  |     ├── application.js
+|  |     ├── hello_controller.js
+|  |     └── index.js
+|  ├── models
+|  |  ├── application_record.rb
+|  |  ├── concerns
+|  |  └── task.rb
+|  └── views
+|     ├── layouts
+|     |  ├── application.html.erb
+|     |  ├── mailer.html.erb
+|     |  └── mailer.text.erb
+|     └── tasks
+|        ├── edit.html.erb
+|        ├── index.html.erb
+|        ├── index.json.jbuilder
+|        ├── new.html.erb
+|        ├── show.html.erb
+|        ├── show.json.jbuilder
+|        ├── _form.html.erb
+|        ├── _task.html.erb
+|        └── _task.json.jbuilder
+├── bin
+|  ├── bundle
+|  ├── bundle.cmd
+|  ├── dev
+|  ├── importmap
+|  ├── rails
+|  ├── rake
+|  └── setup
+├── config
+|  ├── application.rb
+|  ├── boot.rb
+|  ├── cable.yml
+|  ├── credentials.yml.enc
+|  ├── database.yml
+|  ├── environment.rb
+|  ├── environments
+|  |  ├── development.rb
+|  |  ├── production.rb
+|  |  └── test.rb
+|  ├── importmap.rb
+|  ├── initializers
+|  |  ├── assets.rb
+|  |  ├── content_security_policy.rb
+|  |  ├── filter_parameter_logging.rb
+|  |  ├── inflections.rb
+|  |  └── permissions_policy.rb
+|  ├── locales
+|  |  └── en.yml
+|  ├── master.key
+|  ├── puma.rb
+|  ├── routes.rb
+|  └── storage.yml
+├── config.ru
+├── db
+|  ├── migrate
+|  |  └── 20230410165411_create_tasks.rb
+|  ├── schema.rb
+|  └── seeds.rb
+├── Gemfile
+├── Gemfile.lock
+├── lib
+|  ├── assets
+|  └── tasks
+├── log
+|  └── development.log
+├── Procfile.dev
+├── Rakefile
+├── README.md
+├── storage
+├── test
+|  ├── application_system_test_case.rb
+|  ├── channels
+|  |  └── application_cable
+|  |     └── connection_test.rb
+|  ├── controllers
+|  |  └── tasks_controller_test.rb
+|  ├── fixtures
+|  |  ├── files
+|  |  └── tasks.yml
+|  ├── helpers
+|  ├── integration
+|  ├── mailers
+|  ├── models
+|  |  └── task_test.rb
+|  ├── system
+|  |  └── tasks_test.rb
+|  └── test_helper.rb
+├── tmp
+|  ├── cache
+|  |  ├── assets
+|  |  |  └── sprockets
+|  |  └── bootsnap
+|  |     ├── compile-cache-iseq
+|  |     ├── compile-cache-yaml
+|  |     └── load-path-cache
+|  ├── development_secret.txt
+|  ├── pids
+|  ├── restart.txt
+|  ├── sockets
+|  └── storage
+└── vendor
+|  └── javascript
 
 ```
 
